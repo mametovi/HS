@@ -1,0 +1,485 @@
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'), 
+   url('../fonts/ProximaNova-Regular.woff') format('woff'), 
+   url('../fonts/ProximaNova-Regular.ttf')  format('truetype'), 
+   url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'ProximaNova-ExtraBoldCondensed';
+  src: url('../fonts/ProximaNova-ExtraBoldCondensed.eot?#iefix') format('embedded-opentype'),  
+  url('../fonts/ProximaNova-ExtraBoldCondensed.otf')  format('opentype'),
+  url('../fonts/ProximaNova-ExtraBoldCondensed.woff') format('woff'), 
+  url('../fonts/ProximaNova-ExtraBoldCondensed.ttf')  format('truetype'), 
+  url('../fonts/ProximaNova-ExtraBoldCondensed.svg#ProximaNova-ExtraBoldCondensed') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+	box-sizing: border-box;
+}
+
+* {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	list-style: none;
+}
+
+
+a:hover {
+	text-decoration: none;
+}
+
+body {
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+	font-family: 'ProximaNova-Regular';
+}
+
+
+.container-fluid {
+	padding-left: 0;
+}
+
+ .box-inline {
+	
+}
+
+.box-img {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.box-video video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.box-links {
+	display: flex;
+}
+
+
+.box-item:nth-child(2) {
+	margin-left: 64px;
+
+}
+
+.box-links a:nth-child(1) {
+	margin-right: 13px;
+}
+
+.box-links a {
+	font-size: 17px;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+	color: #000
+}
+
+.box-links a:hover {
+	color: #5256d0;
+	text-decoration: none;
+}
+
+.box-wrapper {
+	margin-top: 76px;
+}
+
+.box-wrapper h1 {
+	margin-top: 41px;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+	margin-bottom: 17px;
+	font-size: 28px;
+}
+
+.box-wrapper .h1 {
+	font-size: 28px;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+	margin-top: 57px;
+	margin-bottom: 24px;
+}
+
+
+
+.service-flex span {
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'ProximaNova-Regular';
+}
+
+
+.in {
+	margin-right: 21px;
+}
+
+.group 			  { 
+	position:relative; 
+}
+.inline-form input {
+	padding: 13px 13px 1px 11px;
+	height: 49px;
+	display:block;
+	border:none;
+  border: 1px solid #8f8f8f;
+  border-radius: 4px;
+  font-weight: 700;
+  width: 235px;
+}
+.inline-form input:focus 		{ outline:none; }
+
+.inline-form label {
+  color:#999; 
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left: 13px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.2s ease all; 
+  -webkit-transition:0.2s ease all;
+  font-family: 'ProximaNova-Regular';
+
+}
+
+.inline-form input:focus ~ label, input:valid ~ label 		{
+  top: 9px;
+  font-size:10px;
+  color:#838383;
+}
+
+
+.inline-form input:focus ~ .bar:before, input:focus ~ .bar:after {
+  width:50%;
+}
+
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:25%; 
+  left:0;
+  pointer-events:none;
+  opacity:0.5;
+}
+
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+@-webkit-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@-moz-keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+@keyframes inputHighlighter {
+	from { background:#5264AE; }
+  to 	{ width:0; background:transparent; }
+}
+
+.flex-form {
+	
+}
+
+
+.service input[type="checkbox"] {
+	display: none;
+}
+
+.service input:focus ~ label, input:valid ~ label  {
+	font-size: 11px;
+	color: #000;
+	font-family: 'ProximaNova-Regular';
+}
+
+.service label {
+	margin-bottom: 16px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: middle;
+	margin-right: 10px;
+	border-radius: 20%;
+	border: 1px solid #8f8f8f;
+}
+
+.service label::before {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	vertical-align: middle;
+	margin-right: 10px;
+	border-radius: 20%;
+	border: none;
+}
+
+input[type="checkbox"]:checked + label::before {
+	background-color: #538bd1;
+	width: 14px;
+	height: 14px;
+	left: 2px;
+	top: 0.7px;
+	position: relative;
+}
+
+label span {
+	width: 325px;
+	display: flex;
+	position: relative;
+	top: -20px;
+	left: 32px;
+	font-weight: 600;
+	font-family: 'ProximaNova-Regular';
+}
+
+
+.service {
+	display: flex;
+	flex-direction: column;
+}
+
+input[type="text"]:focus {
+  border: 1px solid #4195cd;
+}
+
+input#datepicker {
+	width: 187px;
+	margin-right: 22px;
+	padding: 7px 13px 8px 30px;
+	border-radius: 5px;
+	border: 1px solid #8f8f8f;
+	font-weight: 700;
+	color: #000;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+}
+
+.date-wrap img {
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 7px;
+}
+
+.date-inline {
+	
+}
+
+input[type="time"] {
+	border: 1px solid #8f8f8f;
+	padding-left: 28px;
+	width: 187px;
+	margin-right: 22px;
+	padding: 7px 13px 6px 30px;
+	border-radius: 5px;
+}
+
+
+.data-wrap:nth-child(2) img{
+	position: absolute;
+	margin-top: 12px;
+	margin-left: 7px;
+}
+
+.date-h1 {
+	font-size: 28px;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+	margin-bottom: 16px;
+	margin-top: 25px;
+}
+
+.date .button {
+ background: linear-gradient(to right, #5256d0, #39b3cb);
+ width: 100%;
+}
+
+.date .button {
+	background: linear-gradient(to right, #5256d0, #39b3cb);
+	display: flex;
+	width: 233px;
+	justify-content: center;
+	color: #fff;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+	padding: 10px 0 12px 0;
+	border-radius: 10px;
+	cursor: pointer;
+	margin-top: 31px;
+}
+
+.date .button a {
+	color: #fff;
+}
+
+
+.date .button:hover {
+	background: linear-gradient(to right, #39b3cb, #5256d0);
+}
+
+
+.footer-line {
+	background: #000000;
+	width: 100%;
+	height: 1px;
+	margin-top: 75px;
+	margin-bottom: 17px;
+}
+
+.map {
+	display: flex;
+	align-items: flex-start;
+	margin-right: 51px;
+}
+
+.map span {
+	max-width: 179px;
+	font-size: 15px;
+	font-family: 'ProximaNova-Regular';
+	font-weight: 600;
+}
+
+.tel span {
+	font-size: 15px;
+	font-family: 'ProximaNova-Regular';
+	font-weight: 600;
+	margin-left: 7px;
+}
+
+.tel a span {
+	color: #000000;
+}
+
+.tel {
+	
+}
+
+.tel:hover img {
+	filter: hue-rotate(304deg);
+}
+
+.icon {
+	display: flex;
+}
+
+.icon img:nth-child(1) {
+	margin-right: 13px;
+}
+
+.map img {
+	margin-right: 9px;
+}
+
+.service .inline {
+	display: flex;
+}
+
+
+.box-item {
+	position: relative;
+ }
+
+.box-video {	
+	position: fixed;
+	max-width: 57.333333%;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.box-video>img{
+	position: absolute;
+	left: 15vh;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 86px;
+	margin: 0 auto;
+	z-index: 7;
+}
+
+.box-video:after {
+	content: "";
+	background: rgba(1,1,1,.7);
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+
+.check-wrapper {
+	text-align: center;
+	margin-top: 177px;
+}
+
+.check-wrapper h1 {
+	font-size: 48px;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+	font-weight: 500;
+	color: #000;
+	margin-bottom: 12px;
+}
+
+.check-wrapper p {
+	font-size: 27px;
+	font-family: 'ProximaNova-Regular';
+}
+
+.check-wrapper img {
+	margin-bottom: 58px;
+}
+
+.click {
+	position: relative;
+}
+
+.click img {
+  transition: filter 0.5s;
+ }
+
+.click img:hover {
+	filter: hue-rotate(304deg);
+}
+
+.form-inline img {
+	position: absolute;
+	margin-left: 7px;
+}
+
+.pop-up {
+
+	width: 187px;
+	border-radius: 5px;
+	border: 1px solid #8f8f8f;
+	padding: 7px 13px 8px 30px;
+	font-weight: 600;
+	font-family: 'ProximaNova-ExtraBoldCondensed';
+}
+
+.gif_img{
+	object-position: center;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}

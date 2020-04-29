@@ -1,0 +1,171 @@
+ @media (max-width: 1199.98px) {
+	.tel {
+		 margin-right: 0;
+	}
+	.map {
+		margin-right: 0;
+	}
+
+	.aft_bl>img {
+		position: absolute;
+		z-index: 7;
+		left: 4vh;
+	}
+
+	.inline-form input {
+    padding: 13px 13px 1px 11px;
+    height: 49px;
+    display: block;
+    border: none;
+    border: 1px solid #8f8f8f;
+    border-radius: 4px;
+    font-weight: 700;
+    width: 100%;
+  }
+  .tel span {
+  	margin-left: 0;
+  }
+}
+
+
+
+
+@media (max-width: 991.98px) {
+	.box-flex {
+		flex-direction: column;
+	}
+	.box-img video {
+		width: 100%;
+	}
+	.col-lg-7{
+		padding-right: 0;
+	}
+	.box-video {
+		height: 100%;
+	}
+
+
+  .check-wrapper {
+    margin-top: 50px;
+  }
+  .box-wrapper {
+  	margin-left: 17px;
+  }
+
+  .box-video {
+  	position: static;
+  }
+
+  .box-video {
+    max-width: 100%;
+  }
+}
+
+
+
+
+@media (max-width: 767.98px) {
+
+}
+
+
+@media (max-width: 647px) {
+
+}
+
+@media (max-width: 575.98px) {
+	.box-item:nth-child(2) {
+		margin-left: 14px;
+	}
+	.inline-form input:nth-child(1) {
+		margin-bottom: 20px;
+	}
+	.inline-form {
+		flex-direction: column;
+	}
+	.in {
+		margin-right: 0;
+	}
+	.box-video>img {
+    width: 360px;
+  }
+}
+
+@media (max-width: 480px) {
+	.footer-item {
+		flex-wrap: wrap-reverse;
+	}
+
+	.tel {
+		margin-right:0; 
+		margin-bottom: 20px;
+	}
+	.map {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
+	.date-flex {
+		flex-direction: column;
+	}
+	input#datepicker {
+		margin-bottom: 20px;
+	}
+	.flex-form {
+		flex-direction: column;
+	}
+
+	.flex-form input:nth-child(1) {
+		margin-bottom: 20px;
+	}
+	.inline-form {
+		flex-direction: column;
+	}
+	.in {
+		margin-right: 0;
+	}
+	.inline-form input:nth-child(1) {
+		margin-bottom: 20px;
+	}
+	input#datepicker {
+    width: 100%;
+    margin-right: 0;
+  }
+  input[type="time"] {
+  	width: 100%;
+  	margin-right: 0;
+  }
+  .pop-up {
+    width: 100%;
+  }
+  .click {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+	label span {
+    width: 266px;
+  }
+  .service-flex:nth-child(4) span {
+  	line-height: 14px;
+  }
+  .service-flex {
+  	margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 389px) {
+	label span {
+		width: 215px;
+	}
+	.service .inline {
+		margin-bottom: 10px;
+	}
+	.box-video>img {
+		width: 240px;
+	}
+}
+
+
+
+
